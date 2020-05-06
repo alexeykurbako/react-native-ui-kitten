@@ -34,6 +34,7 @@ import {
   STRUCTURE,
   EXAMPLES_STRUCTURE,
 } from './app.options';
+import {MetadataService} from "./utils/metadata.service";
 
 @NgModule({
   imports: [
@@ -58,6 +59,7 @@ import {
   ],
   providers: [
     Title,
+    MetadataService,
     { provide: STRUCTURE, useValue: structure },
     { provide: DOCS, useValue: docs },
     { provide: EXAMPLES_STRUCTURE, useValue: examples },
